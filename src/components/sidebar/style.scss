@@ -1,0 +1,40 @@
+.dot {
+    text-align:left;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.arrow
+{
+    text-align: right;
+    position: absolute;
+    margin-top: -24px;
+    margin-left:70%;
+    border:none;
+    background-color: snow;
+    
+    
+}
+.image
+{
+    display:grid;
+    grid-column-gap: 1em;
+    grid-row-gap: 1em;
+}
+.sublist
+{
+    list-style: none;
+    padding-left: 0px;
+    
+}
+
+.button
+{
+    border:none;
+    background-color: #ddd;
+}
+.sidebar
+{
+    border-spacing: 15px;
+    background-color: ie-hex-str($color: #000000)
+}

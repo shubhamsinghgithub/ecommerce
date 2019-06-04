@@ -1,0 +1,50 @@
+
+.carousel-right-down{
+    background-color: #13adb3;
+}
+.carousel-container {
+    margin-left:60px;
+    padding-left:0px;
+    padding-right:0%;
+
+    .carousel-lefttext{
+        background-color: #13adb3;
+        height: 320px;
+        top:8px;
+        h5{
+           font-style:italic ;
+            padding-top: 80px;
+        }
+
+    }
+    .carousel-left
+    {
+        margin-top:0px;
+    }
+    .carousel-div{
+        padding-left: 0px;
+        padding-right:20px;
+        margin-right: 0px;
+    }
+    .Carousel-right
+    {
+        top:8px;     
+        padding-left: 15px;
+        height: 50%;
+        width:100%;
+        
+    }
+   
+    .carousel-right-down
+    {
+        height:79px;
+        margin-top: 20px;
+        margin-bottom:10px;
+        h5{
+            font-style:italic;
+            padding-top:25px;
+        }
+    
+    }
+
+}

@@ -1,0 +1,116 @@
+
+.secondrow
+{
+    background-color: #fafafa ;
+}
+.colsize
+{
+    text-align: left;
+}
+.colsize1
+{
+    text-align: left;
+}
+.halfcol
+{
+    padding-left:0px;
+}
+.seconddiv
+{
+    margin-top: -20px;
+}
+.text
+{
+    text-align: left;
+    padding-left:0px;
+    margin-left: 20px;
+}
+.thirdtext
+{
+    text-align: left;
+    padding-left:130px;
+}
+.thirdrow
+{
+    background-color: none ;
+    padding: 0px  130px;
+}
+.grid
+{
+    display: grid;
+  //grid-template-columns: auto auto auto auto;
+  grid-column-gap: 50px;
+  grid-row-gap: -100px;
+ // background-color: #2196F3;
+  padding: 50px;
+}
+
+.sizebutton > button
+{
+    //padding-right:500px;
+   // padding-top:25px;
+    
+   // text-align: center;
+   // padding:0px;
+    
+    // margin-left:10px;
+   // margin-left:-5px;
+   margin-right:5px;
+    width:58px;
+    height:48px;
+    background-color: white;
+    color: black;
+    border: 2px solid #e7e7e7;
+   
+    
+    
+}
+.addbutton > button
+{
+    // //margin-right:px;
+    // border-radius: 2px;
+    //  width:58px;
+    //  height:48px;
+    //  text-align: center;
+    //  margin-left:-390px;
+      //padding-right:500px;
+     // padding-top:25px; 
+     // text-align: center;
+     // padding:0px;
+     // margin-left:0px;
+     margin-right:5px;
+      width:58px;
+      height:48px;
+      background-color: white;
+      color: black;
+      border: 2px solid #e7e7e7;
+     
+    
+
+    
+}
+
+.imgcarosel
+{
+    padding-right:0px;
+    background-color: aqua;
+    margin-top:-14px;
+}
+.seconddiv
+{
+    background-color: #bbb;
+    padding-right: 0px;
+    padding-left: 0px
+}
+.cod{
+    margin-right: 380px;
+    
+}
+.circle
+{
+    height: 25px;
+  width: 25px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+}
