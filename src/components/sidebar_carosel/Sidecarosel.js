@@ -1,53 +1,37 @@
 import React, { Component } from "react";
 import Slider from "react-slick";
 
-export default class SwipeToSlide extends Component {
+export default class LazyLoad extends Component {
   render() {
     const settings = {
-      className: "center",
+      dots: true,
+      lazyLoad: true,
       infinite: true,
-      vertical:"true",
-      centerPadding: "60px",
-      slidesToShow: 5,
-      swipeToSlide: true,
-      arrow:"false",
-      afterChange: function(index) {
-        console.log(
-          `Slider Changed to: ${index + 1}, background: #222; color: #bada55`
-        );
-      }
-    };
+      speed: 500,
+      slidesToShow: 1,
+      slidesToScroll: 1,
+      initialSlide: 2
+    }
     return (
       <div>
         
         <Slider {...settings}>
           <div>
-            <h3>1</h3>
+            <h3><img src="https://images.bewakoof.com/t320/blue-haze-vest-men-s-plain-round-neck-vest-217603-1558958340.jpg" width="450" height="563"></img></h3>
           </div>
           <div>
-            <h3>2</h3>
+            <h3><img src="https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958374.jpg" width="450" height="563"></img></h3>
           </div>
           <div>
-            <h3>3</h3>
+            <h3><img src="https://images.bewakoof.com/t540/men-halfsleeve-tshirt-comparison-1545307065.jpg?id=217604" width="450" height="563" ></img></h3>
           </div>
           <div>
-            <h3>4</h3>
+            <h3><img src="https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958403.jpg" width="450" height="563" ></img></h3>
           </div>
           <div>
-            <h3>5</h3>
+            <h3><img src="https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958409.jpg" width="450" height="563" ></img></h3>
           </div>
-          <div>
-            <h3>6</h3>
-          </div>
-          <div>
-            <h3>7</h3>
-          </div>
-          <div>
-            <h3>8</h3>
-          </div>
-          <div>
-            <h3>9</h3>
-          </div>
+         
         </Slider>
       </div>
     );

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Container, Row, Col } from "react-bootstrap";
 import Sidebar from "../sidebar/Sidebar";
-import SwipeToSlide from "../sidebar_carosel/Sidecarosel";
+import LazyLoad from "../sidebar_carosel/Sidecarosel";
 import "./style.scss"
 import {Button} from "react-bootstrap";
 
@@ -24,15 +24,36 @@ class Third extends React.Component {
             <br></br>
             <br></br>
             <br></br>
+            <br></br>
+            <Col md={4} className="smallimg">
+            <img src="https://images.bewakoof.com/t320/blue-haze-vest-men-s-plain-round-neck-vest-217603-1558958340.jpg" width="100" height="100" style={{marginTop:"-290px",marginLeft:"40px"}}></img>
+            </Col>
+
+            <Col md={4}>
+            <img src="https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958374.jpg" width="100" height="100" style={{marginTop:"-120px",marginLeft:"40px"}}></img>
+            </Col>
+
+            <Col md={4}>
+            <img src="https://images.bewakoof.com/t540/men-halfsleeve-tshirt-comparison-1545307065.jpg?id=217604" width="100" height="100" style={{marginTop:"-10px",marginLeft:"40px"}}></img>
+            </Col>
+
+            <Col md={4}>
+            <img src="https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958403.jpg" width="100" height="100" style={{marginTop:"10px",marginLeft:"40px"}}></img>
+            </Col>
+
+            <Col md={4}>
+            <img src="
+            https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958409.jpg" width="100" height="100" style={{marginTop:"10px",marginLeft:"40px"}}></img>
+            </Col>
+
             
-           <SwipeToSlide/>
+            
+          
             </Col>
             
             <Col sm={4} className="seconddiv">
-              <br></br>
-              <br></br>
-              <img src="https://images.bewakoof.com/t320/blue-haze-vest-men-s-plain-round-neck-vest-217603-1558958340.jpg" width="450" height="563" style={{marginTop:"-43px"}}></img>
-            </Col>
+            <LazyLoad/>
+             </Col>
 
             <Col sm={6} className="halfcol">
               <div className="text">
@@ -71,6 +92,10 @@ class Third extends React.Component {
               </div>
               </div>
               <br></br>
+              <br></br>
+              <br></br>
+              
+
               <div className="cod">
               <p>Check delivery date / COD availability</p>
               <div className="input-body">
