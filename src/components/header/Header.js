@@ -69,10 +69,31 @@ export default Header;*/
 
 
 import React from "react";
+import Modal from 'react-modal';
 import { Navbar, Nav, Form, FormControl, Button } from "react-bootstrap";
+//import { Modal } from "mdbreact";
 
 
 class Header extends React.Component {
+  constructor() {
+    super()
+      this.state = {
+        isActive : false
+      }
+    
+  }
+
+  // componentWillMount() {
+  //   Modal.setAppElement('body');
+  // }
+
+  toggleModal = () => {
+    this.setState({
+      isActive:!this.state.isActive
+    })
+
+  }
+
   render() {
     return (
       <div>
@@ -81,6 +102,7 @@ class Header extends React.Component {
             <Navbar.Brand href="#home"><b> SHOPPING  </b></Navbar.Brand>
             
             <Button
+            href="/second"
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
               size="sm">
@@ -88,6 +110,7 @@ class Header extends React.Component {
             </Button>
 
             <Button
+            href="/second"
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
               size="sm" >
@@ -95,6 +118,7 @@ class Header extends React.Component {
             </Button>
 
             <Button
+            href="/second"
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
               size="sm"  >
@@ -102,6 +126,7 @@ class Header extends React.Component {
             </Button>
 
             <Button
+            href="/second"
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
               size="sm" >
@@ -109,6 +134,7 @@ class Header extends React.Component {
             </Button>
 
             <Button
+            href="/second"
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
               size="sm">
@@ -116,6 +142,7 @@ class Header extends React.Component {
             </Button>
 
             <Button
+            href="/second"
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }}
               size="sm" >
@@ -138,6 +165,8 @@ class Header extends React.Component {
 
                 
                   <Button
+                  href="/second"
+                    
                     style={{
                       borderRadius: "100px",
                       marginLeft: "-50px"
@@ -174,10 +203,44 @@ class Header extends React.Component {
             </Button>
 
             <Button
+              onClick={this.toggleModal}
               variant="link"
               style={{ textDecoration: "none", color: "#FFFFFF" }} >
               <i class="material-icons">notes</i>
             </Button>
+            <Modal isOpen={this.state.isActive} onRequestClose={this.toggleModal}>
+            <button onClick={this.toggleModal}><i class="material-icons">cancel</i></button>
+
+            <form action="/action_page.php">
+            <div class="container">
+            <h1>Register</h1>
+            <p>Please fill in this form to create an account.</p>
+            <hr/>
+
+           
+
+
+
+           
+            <input class="input-field" type="text" placeholder="Username" name="usrnm" />
+                     <hr></hr>
+            <input class="input-field" type="text" placeholder="Email" name="email" />
+                    <hr></hr>
+            <input class="input-field" type="password" placeholder="Password" name="psw" />
+                    <hr></hr>
+            <p>By creating an account you agree to our <a href="#">Terms & Privacy</a>.</p>
+
+            <button type="submit" class="registerbtn">Register</button>
+           
+                    
+           </div>
+  
+           <div class="container signin">
+           <p>Already have an account? <a href="#">Sign in</a>.</p>
+           </div>
+           
+           </form>
+            </Modal>
 
               </Nav>
             </div>
