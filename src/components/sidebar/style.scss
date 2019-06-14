@@ -1,7 +1,9 @@
 .dot {
     text-align:left;
-    padding-top: 15px;
+    padding-top: 10px;
     padding-bottom: 15px;
+    
+
 }
 
 .arrow
@@ -14,27 +16,33 @@
     background-color: snow;
     
     
+    
 }
 .image
 {
     display:grid;
     grid-column-gap: 1em;
     grid-row-gap: 1em;
+    
 }
 .sublist
 {
     list-style: none;
     padding-left: 0px;
     
+    
 }
 
 .button
 {
     border:none;
-    background-color: #ddd;
+   // background-color: #ddd;
+   background-color: snow;
+   
 }
 .sidebar
 {
     border-spacing: 15px;
     background-color: ie-hex-str($color: #000000)
+    
 }

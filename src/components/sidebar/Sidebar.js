@@ -50,7 +50,7 @@ class Sidebar extends React.Component {
 
   render() {
     const data = [
-      { id: 1, list: <b>Category</b> , subtype: ["T-Shirt", "Sweatshirt", "Vest", "Pants", "Joggers", "Shirt", "Shorts", "Jacket"] },
+      { id: 1, list: <b style={{fontStyle:"Times New Roman"}}>Category</b> , subtype: ["T-Shirt", "Sweatshirt", "Vest", "Pants", "Joggers", "Shirt", "Shorts", "Jacket"] },
       { id: 2, list: <b>Sizes</b> , subtype: ["S", "M", "L", "XL", "XXL", "XXXL"] },
       { id: 3, list: <b>Color</b> , subtype: [] },
       { id: 4, list: <b>Design</b> , subtype: ["chest Printed", "Plain", "Checked"] },
@@ -66,7 +66,7 @@ class Sidebar extends React.Component {
           <container>
             <Row>
 
-              <Col sm={3} className="sidebar" style={{backgroundColor:"#ddd"}} onScroll={this.handleScroll}>
+              <Col sm={3} className="sidebar" style={{backgroundColor:"snow"}} onScroll={this.handleScroll}>
                 <br></br>
                 <h1>Mens Clothing</h1>
                 <br></br>
@@ -102,9 +102,9 @@ class Sidebar extends React.Component {
                               })
                             }
                           </ul>
-                          <br></br>
-                          <div className="block-example border-bottom border-dark"></div>
-                          <br></br>
+                          <div style={{marginTop:"10px"}}></div>
+                          <div className="block-example border-bottom border-dark" style={{marginBottom:"10px"}}></div>
+                          
                         </div>
                       );
                     })
@@ -119,11 +119,7 @@ class Sidebar extends React.Component {
 
               <Col sm={9} className="image">
                 <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-                <br></br>
-         
+
                 <Row md="12">
                   <Col md="4">
                     <img src="https://images.bewakoof.com/t540/blue-haze-half-sleeve-t-shirt-men-s-plain-t-shirts-217604-1558958367.jpg" width="253" height="315"       ></img>

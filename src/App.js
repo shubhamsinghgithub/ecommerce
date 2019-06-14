@@ -6,19 +6,24 @@ import SimpleSlider from "./components/carousel/sliding";
 import Box from "./components/home/box";
 import Page from './components/second_page/Page';
 import Third from './components/third_page/Third';
+import Tshirt from './components/test/test';
 import { Card, Container, Row, Col } from "react-bootstrap";
+import {BrowserRouter as Router,Route,Link} from 'react-router-dom'
 //import Slide from "./components/Home/box";
 //import ControlledCarousel from "./components/carousel/sliding";
 
 function App() {
   return (
     <div className="App">
-    <Header/>   
-     
-     <Third/>
-
-      <Footer/>
-      
+    <Router>
+        <Header/>
+          <Route exact path="/" component={Box}/>
+          <Route path="/second" component={Page}/>
+          <Route path="/third" component={Third}/>
+          <Route path="/tshirt/:id" component={Tshirt}/>
+          <br></br>
+        <Footer/>
+      </Router>
     </div>
    
   );
